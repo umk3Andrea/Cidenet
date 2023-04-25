@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://tecgurus.net/customer.xsd"
+            elementFormDefault="qualified">
+
+    <xsd:element name="getClientesRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id"  type="xsd:int" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="getClientesResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="xsd:int"/>
+                <xsd:element name="nombre" type="xsd:string"/>
+                <xsd:element name="apellido" type="xsd:string"/>
+                <xsd:element name="email" type="xsd:string"/>
+                <xsd:element name="telefono" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+</xsd:schema>
